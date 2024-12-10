@@ -24,6 +24,54 @@
             <!-- place navbar here -->
         </header>
         <main>
+        
+            <!-- Greeting and Instructions -->
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h1>What's your Fantasy Hero Name?</h1>
+                    <p>Fill in the form below and find out!</p>
+                </div>
+
+                <!-- Start Form -->
+                <form class="mb-4" id="fantasyform">
+                    <!-- First Name -->
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                    </div>
+                    <!-- Last Name -->
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                    </div>
+                    <!-- Get Road Type -->
+                    <div class="mb-3">
+                        <label for="roadType" class="form-label">Choose Road Type</label>
+                        <select id="roadType" class="form-select">
+                            <option value="road">Road</option>
+                            <option value="street">Street</option>
+                            <option value="avenue">Avenue</option>
+                            <option value="court">Court</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <!-- Favorite Color -->
+                    <div class="mb-3">
+                        <label for="favColor" class="form-label">Favorite Color</label>
+                        <input type="text" class="form-control" id="favColor" placeholder="Enter your favorite color">
+                    </div>
+                    <!-- Favorite Animal -->
+                    <div class="mb-3">
+                        <label for="favAnimal" class="form-label">Favorite Animal</label>
+                        <input type="text" class="form-control" id="favAnimal" placeholder="Enter your favorite animal">
+                    </div>
+                    <!-- Button -->
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary w-100">Generate Name</button>
+                    </div>
+
+                </form>
+            </div>
 
         </main>
         <footer>
