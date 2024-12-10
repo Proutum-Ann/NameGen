@@ -1,0 +1,14 @@
+input, select {
+    background-color: bisque !important;
+    border: double 3px burlywood !important;
+    transition: .2s;
+}
+
+input:hover, select:hover {
+    background-color: #c4a77d !important;
+    border: double 3px #fff8ef !important;
+}
+
+button {
+    background-color: brown !important;
+}
