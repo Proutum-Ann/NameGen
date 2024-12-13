@@ -27,6 +27,9 @@ function genFirstName (firstName){
     else if (firstLetter === 'd'){
         return 'Fort'
     }
+    else if (firstLetter === 'e'){
+        return 'Fort'
+    }
     else {
         return 'Kyle'
     }
@@ -55,8 +58,20 @@ function genLastName (lastName){
     if (lastLetter === 'a'){
         return 'Shadow'
     } 
+    else if (lastLetter === 'b'){
+        return 'Kindle'
+    }
+    else if (lastLetter === 'c'){
+        return 'Leaf'
+    }
+    else if (lastLetter === 'd'){
+        return 'Boulder'
+    }
     else if (lastLetter === 'e'){
         return 'Storm'
+    }
+    else if (lastLetter === 'f'){
+        return 'Skibidi'
     }
     else if (lastLetter === 'i'){
         return 'Blaze'
