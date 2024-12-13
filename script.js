@@ -3,8 +3,11 @@ function genPrefix (firstName){
     if (firstName.length > 4){
         return 'The Great'
     }
-    else {
+    else if (firstName.length < 10) {
         return 'Master'
+    }
+    else {
+        return 'Monarch'
     }
 }
 
@@ -75,7 +78,7 @@ function genSuffix (favAnimal){
 }
 
 //Master Function to Assemble Full Name
-function genFullName (){
+function genFullName(){
     //Define variables from inputs
     const firstName = document.getElementById('firstName').value.trim()
     const lastName = document.getElementById('lastName').value.trim()
@@ -89,4 +92,22 @@ function genFullName (){
     const middleName = genMiddleName(roadType, favColor)
     const newLastName = genLastName(lastName)
     const suffix = genSuffix(favAnimal)
+
+    //function to capitalize words
+    const capitalizedPrefix = toCapitalize(prefix)
+    const capitalizedFirstName = toCapitalize(newFirstName)
+    const capitalizedMiddleName = toCapitalize(middleName)
+    const capitalizedLastName = toCapitalize(newLastName)
+
+    //Combine 
+    const fullName = `${capitalizedPrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} ${suffix}`
+
+    document.getElementById('results').textContent = fullName
 }
+
+//Function Capitalizer
+function toCapitalize(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+}
+
+// :(
