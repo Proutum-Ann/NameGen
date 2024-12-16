@@ -1,13 +1,16 @@
 //Generate Prefix
 function genPrefix (firstName){
     if (firstName.length > 4){
-        return 'The Great'
+        return 'Blubbicous'
     }
     else if (firstName.length < 10) {
-        return 'Master'
+        return 'Poppable'
+    }
+    else if (firstName.length > 10 && firstName.length < 13) {
+        return 'Skibidi Sigma' /* Help */
     }
     else {
-        return 'Monarch'
+        return 'Bubblimous'
     }
 }
 
@@ -16,19 +19,82 @@ function genFirstName (firstName){
     const firstLetter = firstName.charAt(0).toLowerCase()
 
     if (firstLetter === 'a'){
-        return 'Jeff'
+        return 'Fishy'
     } 
     else if (firstLetter === 'b'){
-        return 'John'
+        return 'Octa'
     }
     else if (firstLetter === 'c'){
-        return 'Bob'
+        return 'Finn'
     }
     else if (firstLetter === 'd'){
-        return 'Fort'
+        return 'Phineas'
     }
     else if (firstLetter === 'e'){
-        return 'Fort'
+        return 'Globbious'
+    }
+    else if (firstLetter === 'f'){
+        return 'Waterwall'
+    }
+    else if (firstLetter === 'g'){
+        return 'Bubbles'
+    }
+    else if (firstLetter === 'h'){
+        return 'Gravel'
+    }
+    else if (firstLetter === 'i'){
+        return 'Sandy'
+    }
+    else if (firstLetter === 'j'){
+        return 'Therma'
+    }
+    else if (firstLetter === 'k'){
+        return 'Jimmy'
+    }
+    else if (firstLetter === 'l'){
+        return 'Scaley'
+    }
+    else if (firstLetter === 'm'){
+        return 'Whirly'
+    }
+    else if (firstLetter === 'n'){
+        return 'Wavers'
+    }
+    else if (firstLetter === 'o'){
+        return 'Anchy'
+    }
+    else if (firstLetter === 'p'){
+        return 'Cici'
+    }
+    else if (firstLetter === 'q'){
+        return 'Gobbles'
+    }
+    else if (firstLetter === 'r'){
+        return 'Puffy'
+    }
+    else if (firstLetter === 's'){
+        return 'Nurse'
+    }
+    else if (firstLetter === 't'){
+        return 'Zeeby'
+    }
+    else if (firstLetter === 'u'){
+        return 'Rab'
+    }
+    else if (firstLetter === 'v'){
+        return 'Ghost'
+    }
+    else if (firstLetter === 'w'){
+        return 'Flopper'
+    }
+    else if (firstLetter === 'x'){
+        return 'Harry'
+    }
+    else if (firstLetter === 'y'){
+        return 'Eel'
+    }
+    else if (firstLetter === 'z'){
+        return 'Tide'
     }
     else {
         return 'Kyle'
@@ -38,16 +104,16 @@ function genFirstName (firstName){
 //Generate Middle Name
 function genMiddleName (roadType, favColor){
     if (roadType === 'road'){
-        return `${favColor}ridge`
+        return `${favColor}stone`
     } 
     else if (roadType === 'street'){
-        return `${favColor}son`
+        return `${favColor}ble`
     }
     else if (roadType === 'avenue'){
-        return `${favColor}field`
+        return `${favColor}waters`
     }
     else {
-        return `${favColor}stone`
+        return `${favColor}kelp`
     }
 }
 
@@ -89,7 +155,7 @@ function genLastName (lastName){
 
 //Generate Suffix
 function genSuffix (favAnimal){
-    return `of the ${favAnimal}`
+    return `the ${favAnimal}fish`
 }
 
 //Master Function to Assemble Full Name
@@ -106,16 +172,17 @@ function genFullName(){
     const newFirstName = genFirstName(firstName)
     const middleName = genMiddleName(roadType, favColor)
     const newLastName = genLastName(lastName)
-    const suffix = genSuffix(favAnimal)
+    const suffix = genSuffix(favAnimal) /* yuh not exactly useful anymore */
 
     //function to capitalize words
-    const capitalizedPrefix = toCapitalize(prefix)
+    //const capitalizedPrefix = toCapitalize(prefix) [Not needed atm]
     const capitalizedFirstName = toCapitalize(newFirstName)
     const capitalizedMiddleName = toCapitalize(middleName)
     const capitalizedLastName = toCapitalize(newLastName)
+    const capitalizedSuffix = toCapitalize(favAnimal)
 
     //Combine 
-    const fullName = `${capitalizedPrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} ${suffix}`
+    const fullName = `${prefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} the ${capitalizedSuffix}fish`
 
     document.getElementById('results').textContent = fullName
 }
