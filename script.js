@@ -6,7 +6,7 @@ function genPrefix (firstName){
     else if (firstName.length < 10) {
         return 'Poppable'
     }
-    else if (firstName.length > 10 && firstName.length < 13) {
+    else if (firstName.length > 10 && favAnimal === 'fish' || favAnimal === 'Fish') {
         return 'Skibidi Sigma' /* Help */
     }
     else {
