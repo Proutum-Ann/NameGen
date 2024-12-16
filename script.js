@@ -122,31 +122,82 @@ function genLastName (lastName){
     const lastLetter = lastName.charAt(lastName.length-1).toLowerCase()
 
     if (lastLetter === 'a'){
-        return 'Shadow'
+        return 'Shade'
     } 
     else if (lastLetter === 'b'){
-        return 'Kindle'
+        return 'Kelper'
     }
     else if (lastLetter === 'c'){
-        return 'Leaf'
+        return 'Waterson'
     }
     else if (lastLetter === 'd'){
-        return 'Boulder'
+        return 'Bubbler'
     }
     else if (lastLetter === 'e'){
         return 'Storm'
     }
     else if (lastLetter === 'f'){
-        return 'Skibidi'
+        return 'Jumper'
+    }
+    else if (lastLetter === 'g'){
+        return 'Goobuloius'
+    }
+    else if (lastLetter === 'h'){
+        return 'Tidefarer'
     }
     else if (lastLetter === 'i'){
-        return 'Blaze'
+        return 'Crashion'
+    }
+    else if (lastLetter === 'j'){
+        return 'Sandson'
+    }
+    else if (lastLetter === 'k'){
+        return 'Squid'
+    }
+    else if (lastLetter === 'l'){
+        return 'Trencher'
+    }
+    else if (lastLetter === 'm'){
+        return 'Seafarer'
+    }
+    else if (lastLetter === 'n'){
+        return 'Shelldon'
     }
     else if (lastLetter === 'o'){
-        return 'Thorn'
+        return 'Hoppas'
+    }
+    else if (lastLetter === 'p'){
+        return 'Moonshine'
+    }
+    else if (lastLetter === 'q'){
+        return 'Grazer'
+    }
+    else if (lastLetter === 'r'){
+        return 'Blubblimon'
+    }
+    else if (lastLetter === 's'){
+        return 'Coral'
+    }
+    else if (lastLetter === 't'){
+        return 'Caven'
     }
     else if (lastLetter === 'u'){
-        return 'Forest'
+        return 'Shark'
+    }
+    else if (lastLetter === 'v'){
+        return 'Raythen'
+    }
+    else if (lastLetter === 'w'){
+        return 'Chompas'
+    }
+    else if (lastLetter === 'x'){
+        return 'Dashale'
+    }
+    else if (lastLetter === 'y'){
+        return 'Glider'
+    }
+    else if (lastLetter === 'z'){
+        return 'Golpur'
     }
     else {
         return 'Moon'

@@ -1,3 +1,18 @@
+body {
+    background-image: url('imgs/feeshbg.jpg');
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2% 3%
+}
+
+#theheader {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1%;
+    margin-top: 20px;
+}
+
 input, select {
     background-color: bisque !important;
     border: double 3px burlywood !important;
