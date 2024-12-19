@@ -3,7 +3,7 @@ function genPrefix (firstName){
     if (firstName.length > 4){
         return 'Blubbicous'
     }
-    else if (firstName.length < 10) {
+    else if (firstName.length < 10){
         return 'Poppable'
     }
     else {
@@ -202,7 +202,7 @@ function genLastName (lastName){
 }
 
 //Generate Suffix
-function genSuffix (favAnimal){
+function genSuffix(favAnimal){
     return `${favAnimal}fish`
 }
 
