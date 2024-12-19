@@ -27,6 +27,15 @@ input:hover, select:hover {
     color: white !important;
 }
 
-button {
-    background-color: brown !important;
+.btn {
+    background-color: brown;
+    border: white dashed 2px;
+    color: white;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #7f8ac5;
+    border: #c7d5f3 dashed 2px;
+    color: #c7d5f3;
 }
