@@ -6,9 +6,6 @@ function genPrefix (firstName){
     else if (firstName.length < 10) {
         return 'Poppable'
     }
-    else if (firstName.length > 10 && favAnimal === 'fish' || favAnimal === 'Fish') {
-        return 'Skibidi Sigma' /* Help */
-    }
     else {
         return 'Bubblimous'
     }
@@ -22,7 +19,7 @@ function genFirstName (firstName){
         return 'Fishy'
     } 
     else if (firstLetter === 'b'){
-        return 'Octa'
+        return 'Occa'
     }
     else if (firstLetter === 'c'){
         return 'Finn'
@@ -79,7 +76,7 @@ function genFirstName (firstName){
         return 'Zeeby'
     }
     else if (firstLetter === 'u'){
-        return 'Rab'
+        return 'Rab' /*II reference lol*/
     }
     else if (firstLetter === 'v'){
         return 'Ghost'

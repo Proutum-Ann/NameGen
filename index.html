@@ -34,36 +34,41 @@
                 
                 <!-- Start Form -->
                 <form class="mb-4" id="fantasyform">
-                    <!-- First Name -->
-                    <div class="mb-3">
-                        <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                    <div class="row">
+                        <!-- First Name -->
+                        <div class="mb-3 col-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <!-- Last Name -->
+                        <div class="mb-3 col-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                        </div>
                     </div>
-                    <!-- Last Name -->
-                    <div class="mb-3">
-                        <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
-                    </div>
-                    <!-- Get Road Type -->
-                    <div class="mb-3">
-                        <label for="roadType" class="form-label">Choose Road Type</label>
-                        <select id="roadType" class="form-select">
-                            <option value="road">Road</option>
-                            <option value="street">Street</option>
-                            <option value="avenue">Avenue</option>
-                            <option value="court">Court</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <!-- Favorite Color -->
-                    <div class="mb-3">
-                        <label for="favColor" class="form-label">Favorite Color</label>
-                        <input type="text" class="form-control" id="favColor" placeholder="Enter your favorite color">
-                    </div>
-                    <!-- Favorite Animal -->
-                    <div class="mb-3">
-                        <label for="favAnimal" class="form-label">Favorite Animal</label>
-                        <input type="text" class="form-control" id="favAnimal" placeholder="Enter your favorite animal">
+
+                    <div class="row">
+                        <!-- Get Road Type -->
+                        <div class="mb-3 col-4">
+                            <label for="roadType" class="form-label">Choose Road Type</label>
+                            <select id="roadType" class="form-select">
+                                <option value="road">Road</option>
+                                <option value="street">Street</option>
+                                <option value="avenue">Avenue</option>
+                                <option value="court">Court</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <!-- Favorite Color -->
+                        <div class="mb-3 col-4">
+                            <label for="favColor" class="form-label">Favorite Color</label>
+                            <input type="text" class="form-control" id="favColor" placeholder="Enter your favorite color">
+                        </div>
+                        <!-- Favorite Animal -->
+                        <div class="mb-3 col-4">
+                            <label for="favAnimal" class="form-label">Favorite Animal</label>
+                            <input type="text" class="form-control" id="favAnimal" placeholder="Enter your favorite animal">
+                        </div>
                     </div>
                     <!-- Button -->
                     <div class="mb-3">
