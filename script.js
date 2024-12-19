@@ -203,7 +203,7 @@ function genLastName (lastName){
 
 //Generate Suffix
 function genSuffix (favAnimal){
-    return `the ${favAnimal}fish`
+    return `${favAnimal}fish`
 }
 
 //Master Function to Assemble Full Name
@@ -220,17 +220,17 @@ function genFullName(){
     const newFirstName = genFirstName(firstName)
     const middleName = genMiddleName(roadType, favColor)
     const newLastName = genLastName(lastName)
-    const suffix = genSuffix(favAnimal) /* yuh not exactly useful anymore */
+    const suffix = genSuffix(favAnimal)
 
     //function to capitalize words
     //const capitalizedPrefix = toCapitalize(prefix) [Not needed atm]
     const capitalizedFirstName = toCapitalize(newFirstName)
     const capitalizedMiddleName = toCapitalize(middleName)
     const capitalizedLastName = toCapitalize(newLastName)
-    const capitalizedSuffix = toCapitalize(favAnimal)
+    const capitalizedSuffix = toCapitalize(suffix)
 
     //Combine 
-    const fullName = `${prefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} the ${capitalizedSuffix}fish`
+    const fullName = `${prefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} the ${capitalizedSuffix}`
 
     document.getElementById('results').textContent = fullName
 }
